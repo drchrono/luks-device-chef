@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: luks-device-chef
+  description: A resource for unlocking and mounting LUKS encrypted devices.
+  annotations:
+    business-unit: EverHealth
+    github.com/project-slug: drchrono/luks-device-chef
+    product: DRC
+spec:
+  type: service
+  lifecycle: production
+  owner: EverHealth
+  implementation:
+    languages:
+    - Ruby
